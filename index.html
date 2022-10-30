@@ -8,13 +8,16 @@
     <title>Gerador de Senha</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <img class="logo" src="./logo.png" alt="Gerador de Senha - logo">
 
     <main class="container-input">
-        <span>Tamanho <span id="valor"></span> caracteres</span>
+        <span class="tamanho">Tamanho <span id="valor"></span> caracteres</span>
         <input id="slider" class="slider" type="range" min="5" max="25" value="15">
 
         <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
@@ -24,7 +27,8 @@
     <div id="container-password" onclick="copyPassword()" class="container-password hide">
         <span class="title">Sua senha garada foi:</span>
         <span id="password" class="password">123123123123</span>
-        <span class="tooltip">Clique na senha para copiar. ☝🏾</span>
+        <span class="tooltip"> ⇧ Clique na senha para copiar ⇧</span>
+        <br>
     </div>
     
     <script src="script.js"></script>
